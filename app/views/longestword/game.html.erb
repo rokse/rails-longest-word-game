@@ -1,0 +1,8 @@
+<br>
+<p><strong>Here is your new grid : </strong><%= @grid %></p>
+<form action="/score" method="GET">
+  <input type="hidden" value=<%= @grid.join('') %> name="grid">
+  <input type="hidden" value=<%= @start_time %> name="time">
+  <input id="attempt" name= "attempt" type="text" placeholder="Type your attempt">
+  <input type="submit" value="Try it!">
+</form>
